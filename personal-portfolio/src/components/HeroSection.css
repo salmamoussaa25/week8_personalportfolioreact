@@ -1,0 +1,93 @@
+:root{
+    --primarycolor: #E66249;
+    --maincolorgreendark: #023C40;
+    --maincolorlight: #FCF2D9;
+    --accentcolorpurple: #BBA0CA;
+    --primarytitlefontfamily: "BBH Sans Hegarty", sans-serif;
+    --primaryfontsize: 40px;
+    --secondaryfontfamily: "Lexend", sans-serif;
+    --secondaryfontsize: 30px;
+    --secondaryfontweight: 400;
+    --subheadingfontsize: 40px;
+    --subheadingfontweight: 500;
+    --minitextfontsize: 24px;
+    --minitextfontweight: 400;
+    --seriffontfamily: "Abril Fatface", serif;
+    --seriffontsize: 32px; 
+    --arabicfontfamily: 'BlueOcean', sans-serif;
+    --arabicfontdirection:  rtl;    
+}
+
+.hero_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero_leftsection{
+    display: flex;
+    width: 626px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.hero_rightsection{
+    display: flex;
+    width: 879px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 119px;
+}
+
+.herosection_topright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 24px;
+}
+
+.by_text{
+    color: var(--primary-color);
+    font-family: var(--primarytitlefontfamily);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.name_text{
+    color: var(--primary-color);
+    font-family: var(--primarytitlefontfamily);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.intro_text{
+    color: var(--primary-color);
+    text-align: right;
+    font-family: var(--secondaryfontfamily);
+    font-size: var(--secondaryfontsize);
+    font-style: normal;
+    font-weight: var(--secondaryfontweight);
+    line-height: normal;
+}
+
+.heroheader{
+    color: var(--primary-color);
+    font-family: var(--primarytitlefontfamily);
+    font-size: var(--subheadingfontsize);
+    font-style: normal;
+    font-weight: var(--minitextfontweight);
+    line-height: normal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+

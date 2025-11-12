@@ -15,23 +15,14 @@
     --seriffontfamily: "Abril Fatface", serif;
     --seriffontsize: 32px; 
     --arabicfontfamily: 'BlueOcean', sans-serif;
-    --arabicfontdirection:  rtl;   
+    --arabicfontdirection:  rtl;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 334px;
-    padding-top: 60px;
-    padding-bottom: 20px;
-}
-
-.menubuttonscont{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 77px;
+.menu_arabicbutton{
+    font-family: var(--arabicfontfamily);
+    border: none;
+    background: none;
+    color: var(--primarycolor);
+    direction: var(--arabicfontdirection);
+    
 }
