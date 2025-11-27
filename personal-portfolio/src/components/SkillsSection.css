@@ -1,0 +1,21 @@
+.skillsSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsCont{
+    display: grid;
+    width: 1536px;
+    height: 1420px;
+    row-gap: 92px;
+    column-gap: 92px;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contRow{
+    display: flex;
+    flex-direction: column;
+    width: 722px;
+    height: 1420px;       
+}
