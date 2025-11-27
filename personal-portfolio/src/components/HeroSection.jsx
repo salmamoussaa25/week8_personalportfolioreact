@@ -1,6 +1,7 @@
 import React from 'react';
 import './HeroSection.css'; 
-import herosectionlogo from '../assets/herosectionlogo.png'
+import herosectionlogo from '../assets/herosectionlogo.png';
+import OrangeButton from './OrangeButton.jsx';
 
 const HeroSection = () => {
     return ( <>
@@ -16,7 +17,7 @@ const HeroSection = () => {
                     <p className='intro_text'>I have a multi-disciplinary background in design and am especially interested in designing digital products and experiences.</p>
                 </section>
 
-                
+                <OrangeButton buttontext='Get in Touch'/>
             </section>
         </section>
     </> );

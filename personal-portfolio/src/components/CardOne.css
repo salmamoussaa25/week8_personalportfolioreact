@@ -1,0 +1,40 @@
+:root{
+    --primarycolor: #E66249;
+    --maincolorgreendark: #023C40;
+    --maincolorlight: #FCF2D9;
+    --accentcolorpurple: #BBA0CA;
+    --primarytitlefontfamily: "BBH Sans Hegarty", sans-serif;
+    --primaryfontsize: 40px;
+    --secondaryfontfamily: "Lexend", sans-serif;
+    --secondaryfontsize: 30px;
+    --secondaryfontweight: 400;
+    --subheadingfontsize: 40px;
+    --subheadingfontweight: 500;
+    --minitextfontsize: 24px;
+    --minitextfontweight: 400;
+    --seriffontfamily: "Abril Fatface", serif;
+    --seriffontsize: 32px; 
+    --arabicfontfamily: 'BlueOcean', sans-serif;
+    --arabicfontdirection:  rtl;    
+}
+
+.cardonecont{
+    width: 1444px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 1585px;
+    flex-shrink: 0;
+    background: url(../assets/myapproachbackground.png) lightgray 50% / cover no-repeat;
+}
+
+.myapproachtext{
+    color: var(--maincolorgreendark);
+    text-align: center;
+    font-family: var(--secondaryfontfamily);
+    font-size: var(--secondaryfontsize);
+    font-style: normal;
+    font-weight: var(--minitextfontweight);
+    line-height: normal;
+    width: 1385px;
+}

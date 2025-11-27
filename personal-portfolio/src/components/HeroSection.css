@@ -20,9 +20,13 @@
 
 .hero_section{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 28px;
+    margin-top: 30px;
+    padding-top: 60px;
+    padding-bottom: 50px;
 }
 
 .hero_leftsection{
@@ -49,7 +53,7 @@
 }
 
 .by_text{
-    color: var(--primary-color);
+    color: var(--primarycolor);
     font-family: var(--primarytitlefontfamily);
     font-size: 30px;
     font-style: normal;
@@ -58,7 +62,7 @@
 }
 
 .name_text{
-    color: var(--primary-color);
+    color: var(--primarycolor);
     font-family: var(--primarytitlefontfamily);
     font-size: 40px;
     font-style: normal;
@@ -67,7 +71,7 @@
 }
 
 .intro_text{
-    color: var(--primary-color);
+    color: var(--primarycolor);
     text-align: right;
     font-family: var(--secondaryfontfamily);
     font-size: var(--secondaryfontsize);
@@ -77,7 +81,7 @@
 }
 
 .heroheader{
-    color: var(--primary-color);
+    color: var(--primarycolor);
     font-family: var(--primarytitlefontfamily);
     font-size: var(--subheadingfontsize);
     font-style: normal;
@@ -90,4 +94,5 @@
     text-underline-offset: auto;
     text-underline-position: from-font;
 }
+
 
