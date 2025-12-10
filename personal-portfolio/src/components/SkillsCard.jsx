@@ -12,6 +12,7 @@ const SkillsCard = (props) => {
                         <p className='skillDuration'>{props.skillYears}</p>
                     </section>
                 </section>
+                <p className='skillDescription'>{props.skillDesc}</p>
         </div>
      );
 }

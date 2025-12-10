@@ -1,7 +1,35 @@
 .card{
-    width: 722px;
-    height: 411px;
+    width: 686px;
+    height: 375px;
+    padding: 36px;
     border-radius: 30px;
     background: var(--accentcolorpurple);
     box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(255, 255, 255, 0.25) inset;
 }
+
+.cardSectionTop{
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.cardHeadingsCont{
+    display: flex;
+    width: 312px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.skillName{
+
+}
+
+.skillDuration{
+
+}
+
+.skillDescription{
+    
+}
+
