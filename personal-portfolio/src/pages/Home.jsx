@@ -6,10 +6,11 @@ import MyApproach from '../components/MyApproach';
 const Home = () => {
     return ( 
     <>
-        <section className=''>
+        <section className='homepagecont'>
             <NavHome />
             <HeroSection />
             <MyApproach />
+            
         </section>
         
     </> );

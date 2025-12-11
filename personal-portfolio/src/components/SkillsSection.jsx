@@ -10,6 +10,8 @@ const SkillsSection = () => {
         <section className='cardsCont'>
             <section className='contRow'>
                 <SkillsCard /> 
+                <SkillsCard /> 
+                <SkillsCard /> 
             </section>
         </section>
         </div>

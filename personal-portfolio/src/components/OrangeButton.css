@@ -20,6 +20,7 @@
 
 .orangebutton{
     display: inline-flex;
+    width: 280px;
     padding: 12px 24px;
     justify-content: center;
     align-items: center;

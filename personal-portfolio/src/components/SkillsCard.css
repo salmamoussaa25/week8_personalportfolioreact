@@ -22,14 +22,30 @@
 }
 
 .skillName{
-
+    color: var(--maincolorlight);
+    font-family: var(--primarytitlefontfamily);
+    font-size: var( --primaryfontsize);
+    font-style: normal;
+    font-weight: var(--subheadingfontweight);
+    line-height: normal;
 }
 
 .skillDuration{
-
+    color: var(--mainlightcolor);
+    font-family: var(--primarytitlefontfamily);
+    font-size: var(--secondaryfontsize);
+    font-style: normal;
+    font-weight: var(--minitextfontweight);
+    line-height: normal;
 }
 
 .skillDescription{
-    
+    width: 648px;
+    color: var(--main-light-color, #FCF2D9);
+    font-family: var(--secondaryfontfamily);
+    font-size: var(--minitextfontsize);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 

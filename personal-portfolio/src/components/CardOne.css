@@ -19,13 +19,14 @@
 }
 
 .cardonecont{
-    width: 1444px;
+    width: 1503px;
+    height: 628px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
-    height: 1585px;
-    flex-shrink: 0;
-    background: url(../assets/myapproachbackground.png) lightgray 50% / cover no-repeat;
+    align-items: center;
+    background-image: url(../assets/myapproachbackground.png) lightgray 50% / cover no-repeat;
 }
 
 .myapproachtext{
