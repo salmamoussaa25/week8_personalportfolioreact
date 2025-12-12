@@ -7,7 +7,7 @@ const SkillsCard = (props) => {
         <div className='card'>
                 <section className="cardSectionTop">
                     <img src={props.skillImg} alt={props.imageAlt} />
-                    <section className='cardHeadingsCont'>
+                    <section className='cardheadingscont'>
                         <p className='skillName'>{props.skillsName}</p>
                         <p className='skillDuration'>{props.skillYears}</p>
                     </section>

@@ -1,10 +1,17 @@
 .skillsSection{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .cardsCont{
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 1536px;
     height: 1420px;
     row-gap: 92px;
@@ -17,5 +24,6 @@
     display: flex;
     flex-direction: column;
     width: 722px;
-    height: 1420px;       
+    height: 1420px; 
+    gap: 50px;      
 }

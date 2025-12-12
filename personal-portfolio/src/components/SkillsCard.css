@@ -1,3 +1,29 @@
+p, h1, h2{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primarycolor: #E66249;
+    --maincolorgreendark: #023C40;
+    --maincolorlight: #FCF2D9;
+    --accentcolorpurple: #BBA0CA;
+    --primarytitlefontfamily: "BBH Sans Hegarty", sans-serif;
+    --primaryfontsize: 40px;
+    --secondaryfontfamily: "Lexend", sans-serif;
+    --secondaryfontsize: 30px;
+    --secondaryfontweight: 400;
+    --subheadingfontsize: 40px;
+    --subheadingfontweight: 500;
+    --minitextfontsize: 24px;
+    --minitextfontweight: 400;
+    --seriffontfamily: "Abril Fatface", serif;
+    --seriffontsize: 32px; 
+    --arabicfontfamily: 'BlueOcean', sans-serif;
+    --arabicfontdirection:  rtl;    
+}
+
+
 .card{
     width: 686px;
     height: 375px;
@@ -13,7 +39,7 @@
     gap: 55px;
 }
 
-.cardHeadingsCont{
+.cardheadingscont{
     display: flex;
     width: 312px;
     flex-direction: column;
@@ -23,17 +49,18 @@
 
 .skillName{
     color: var(--maincolorlight);
-    font-family: var(--primarytitlefontfamily);
+    font-family: var(--secondaryfontfamily);
     font-size: var( --primaryfontsize);
     font-style: normal;
     font-weight: var(--subheadingfontweight);
     line-height: normal;
+
 }
 
 .skillDuration{
     color: var(--mainlightcolor);
-    font-family: var(--primarytitlefontfamily);
-    font-size: var(--secondaryfontsize);
+    font-family: var(--secondaryfontfamily);
+    font-size: var(--minitextfontsize);
     font-style: normal;
     font-weight: var(--minitextfontweight);
     line-height: normal;
@@ -41,7 +68,7 @@
 
 .skillDescription{
     width: 648px;
-    color: var(--main-light-color, #FCF2D9);
+    color: var(--mainlightcolor);
     font-family: var(--secondaryfontfamily);
     font-size: var(--minitextfontsize);
     font-style: normal;
