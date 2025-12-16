@@ -51,7 +51,7 @@ const SkillsSection = () => {
                     skillDesc="Blender has allowed me to explore 3D storytelling within UX and AR design. I use it to model, texture, and render assets that enhance visual depth and interactivity across digital environments."
                 />
 
-                <SkillsCard
+                <SkillsCards
                     skillImg="./assets/aeroicon.png"
                     imageAlt="Adobe Aero logo"
                     skillsName="Adobe Aero"
