@@ -2,6 +2,12 @@ import React from 'react';
 import './SkillsSection.css';
 import Title from './Title';
 import SkillsCard from './SkillsCard';
+import adobeicon from '../assets/adobeicon.png';
+import uxresearchicon from '../assets/uxresearchicon.png';
+import figmaicon from '../assets/figmaicon.png';
+import vscodeicon from '../assets/vscodeicon.png';
+import blendericon from '../assets/blendericon.png';
+import aeroicon from '../assets/aeroicon.png';
 
 const SkillsSection = () => {
     return ( 
@@ -10,7 +16,7 @@ const SkillsSection = () => {
         <section className='cardsCont'>
             <section className='contRow'>
                 <SkillsCard
-                    skillImg="./assets/adobeicon.png"
+                    skillImg={adobeicon}
                     imageAlt="Adobe CC logo"
                     skillsName="Adobe CC"
                     skillYears="3 Years of Experience"
@@ -18,7 +24,7 @@ const SkillsSection = () => {
                 />
 
                 <SkillsCard
-                    skillImg="./assets/uxresearchicon.png"
+                    skillImg={uxresearchicon}
                     imageAlt="UX Research icon"
                     skillsName="UX Research"
                     skillYears="2 Years of Experience"
@@ -26,7 +32,7 @@ const SkillsSection = () => {
                 />
 
                 <SkillsCard
-                    skillImg="./assets/figmaicon.png"
+                    skillImg={figmaicon}
                     imageAlt="Figma logo"
                     skillsName="Figma"
                     skillYears="2 Years of Experience"
@@ -36,7 +42,7 @@ const SkillsSection = () => {
             
             <section className='contRow'>
                 <SkillsCard
-                    skillImg="./assets/vscodeicon.png"
+                    skillImg={vscodeicon}
                     imageAlt="VS Code logo"
                     skillsName="VS Code"
                     skillYears="2 Years of Experience"
@@ -44,15 +50,15 @@ const SkillsSection = () => {
                 />
 
                 <SkillsCard
-                    skillImg="./assets/blendericon.png"
+                skillImg={blendericon}
                     imageAlt="Blender logo"
                     skillsName="Blender"
                     skillYears="1 Year of Experience"
                     skillDesc="Blender has allowed me to explore 3D storytelling within UX and AR design. I use it to model, texture, and render assets that enhance visual depth and interactivity across digital environments."
                 />
 
-                <SkillsCards
-                    skillImg="./assets/aeroicon.png"
+                <SkillsCard
+                    skillImg={aeroicon}
                     imageAlt="Adobe Aero logo"
                     skillsName="Adobe Aero"
                     skillYears="1 Year of Experience"

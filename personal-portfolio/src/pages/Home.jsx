@@ -12,6 +12,7 @@ const Home = () => {
             <HeroSection />
             <MyApproach />
             <SkillsSection />
+            
         </section>
         
     </> );
