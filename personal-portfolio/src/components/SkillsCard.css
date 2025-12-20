@@ -1,78 +1,63 @@
-p, h1, h2{
+p, h1, h2 {
     margin: 0;
     padding: 0;
 }
 
-:root{
-    --primarycolor: #E66249;
-    --maincolorgreendark: #023C40;
-    --maincolorlight: #FCF2D9;
-    --accentcolorpurple: #BBA0CA;
-    --primarytitlefontfamily: "BBH Sans Hegarty", sans-serif;
-    --primaryfontsize: 40px;
-    --secondaryfontfamily: "Lexend", sans-serif;
-    --secondaryfontsize: 30px;
-    --secondaryfontweight: 400;
-    --subheadingfontsize: 40px;
-    --subheadingfontweight: 500;
-    --minitextfontsize: 24px;
-    --minitextfontweight: 400;
-    --seriffontfamily: "Abril Fatface", serif;
-    --seriffontsize: 32px; 
-    --arabicfontfamily: 'BlueOcean', sans-serif;
-    --arabicfontdirection:  rtl;    
-}
-
-
-.card{
+.card {
     width: 686px;
     height: 375px;
-    padding: 36px;
+    padding: 40px; /* Adjusted for better alignment with text */
     border-radius: 30px;
     background: var(--accentcolorpurple);
-    box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(255, 255, 255, 0.25) inset;
+    /* Dual shadow for the outer depth and inner highlight effect */
+    box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.25), 
+                inset 0 4px 4px 0 rgba(255, 255, 255, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-sizing: border-box;
 }
 
-.cardSectionTop{
+.cardSectionTop {
     display: flex;
     align-items: center;
-    gap: 55px;
+    gap: 30px;
 }
 
-.cardheadingscont{
+.cardSectionTop img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.cardheadingscont {
     display: flex;
-    width: 312px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 5px;
 }
 
-.skillName{
+.skillName {
     color: var(--maincolorlight);
     font-family: var(--secondaryfontfamily);
-    font-size: var( --primaryfontsize);
-    font-style: normal;
-    font-weight: var(--subheadingfontweight);
-    line-height: normal;
-
+    font-size: var(--primaryfontsize); /* 40px */
+    font-weight: var(--subheadingfontweight); /* 500 */
+    line-height: 1.1;
 }
 
-.skillDuration{
-    color: var(--mainlightcolor);
+.skillDuration {
+    color: var(--maincolorlight);
     font-family: var(--secondaryfontfamily);
-    font-size: var(--minitextfontsize);
-    font-style: normal;
-    font-weight: var(--minitextfontweight);
-    line-height: normal;
+    font-size: var(--minitextfontsize); /* 24px */
+    font-weight: var(--minitextfontweight); /* 400 */
+    opacity: 0.9;
 }
 
-.skillDescription{
-    width: 648px;
-    color: var(--mainlightcolor);
+.skillDescription {
+    color: var(--maincolorlight);
     font-family: var(--secondaryfontfamily);
-    font-size: var(--minitextfontsize);
-    font-style: normal;
+    font-size: 20px; /* Adjusted slightly smaller for readability within the card */
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.4;
+    text-align: left;
 }
-
