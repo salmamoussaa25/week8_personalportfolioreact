@@ -3,6 +3,7 @@ import NavHome from '../components/NavHome'
 import HeroSection from '../components/HeroSection';
 import MyApproach from '../components/MyApproach';
 import SkillsSection from '../components/SkillsSection';
+import LatestProject from '../components/LatestProject';
 
 const Home = () => {
     return ( 
@@ -12,7 +13,7 @@ const Home = () => {
             <HeroSection />
             <MyApproach />
             <SkillsSection />
-            
+            <LatestProject />
         </section>
         
     </> );
