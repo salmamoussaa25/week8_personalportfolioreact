@@ -12,12 +12,12 @@ const Home = () => {
     return ( 
     <>
     <Helmet>
-        <title>About</title>
-        <meta name="description" content="This is the about page" />
-        <meta property="og:title" content="About Us" />
-        <meta property="og:image" content="/images/about.png" />
+        <title>Sal's Studio - Homepage</title>
+        <meta name="description" content="I’m Salma Moussa. I am a UX/UI Designer based in Egypt. I have a muti-disciplinary background in design. I am especially interested in designing digital experiences." />
+        <meta property="og:title" content="Salma Moussa | Multi-disciplinary UX/UI Designer" />
+        <meta property="og:image" content="../assets/herosectionlogo.png" />
       </Helmet>
-      
+
         <section className='homepagecont'>
             <NavHome />
             <HeroSection />
