@@ -1,0 +1,7 @@
+.footer-column-title {
+    font-family: var(--secondaryfontfamily);
+    font-size: var(--secondaryfontsize); 
+    font-weight: 600;
+    margin: 0;
+    color: var(--maincolorlight);
+}
