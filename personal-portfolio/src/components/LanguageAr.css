@@ -1,28 +1,27 @@
-:root{
-    --primarycolor: #E66249;
-    --maincolorgreendark: #023C40;
-    --maincolorlight: #FCF2D9;
-    --accentcolorpurple: #BBA0CA;
-    --primarytitlefontfamily: "BBH Sans Hegarty", sans-serif;
-    --primaryfontsize: 40px;
-    --secondaryfontfamily: "Lexend", sans-serif;
-    --secondaryfontsize: 30px;
-    --secondaryfontweight: 400;
-    --subheadingfontsize: 40px;
-    --subheadingfontweight: 500;
-    --minitextfontsize: 24px;
-    --minitextfontweight: 400;
-    --seriffontfamily: "Abril Fatface", serif;
-    --seriffontsize: 32px; 
-    --arabicfontfamily: 'BlueOcean', sans-serif;
-    --arabicfontdirection:  rtl;
-}
-
-.menu_arabicbutton{
+.menu_arabicbutton {
     font-family: var(--arabicfontfamily);
     border: none;
     background: none;
-    color: var(--primarycolor);
-    direction: var(--arabicfontdirection);
-    
+    color: var(--primarycolor); 
+    direction: var(--arabicfontdirection); 
+    font-size: 22px;
+    cursor: pointer;
+    padding: 5px 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu_arabicbutton:hover {
+    transform: scale(1.1);
+    color: var(--maincolorgreendark);
+}
+
+.arabic-link-wrapper {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-left: 1px solid rgba(2, 60, 64, 0.2); 
+    margin-left: 10px;
 }
