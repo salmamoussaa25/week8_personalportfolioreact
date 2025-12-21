@@ -8,17 +8,17 @@ const NavHome = () => {
     <>
     <nav>
         <section className='menubuttonscont'>
-        <MenuButton title="My Approach" />
-        <MenuButton title="Latest Projects" />
-        <MenuButton title="Skills" />
-        <MenuButton title="Experience" />
-        <MenuButton title="Blog" />
-        <MenuButton title="Services" />
+            <MenuButton title="My Approach" />
+            <MenuButton title="Latest Projects" />
+            <MenuButton title="Skills" />
+            <MenuButton title="Experience" />
+            <MenuButton title="Blog" />
+            <MenuButton title="Services" />
         </section>
         <LanguageAr title="عربي"/>
     </nav>
     
-    
+
     </> );
 }
  
