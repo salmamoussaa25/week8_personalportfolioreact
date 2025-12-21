@@ -1,8 +1,8 @@
 import React from 'react';
 import './NavBar.css';
 import MenuButton from './MenuButton';
-import LanguageAr from './LangAr';
-import nav_logo from '../assetss/nav_logo.png';
+import LanguageAr from './LanguageAr';
+import nav_logo from '../assets/nav_logo.png';
 
 
 const NavBar = () => {

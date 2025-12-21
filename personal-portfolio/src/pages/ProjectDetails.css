@@ -1,0 +1,76 @@
+.pd-page-container {
+    background-color: var(--maincolorlight);
+}
+
+.pd-main-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 5%;
+}
+
+.pd-pill-breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    font-family: var(--secondaryfontfamily);
+}
+
+.pd-pill-item {
+    color: var(--primarycolor);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pd-pill-sep {
+    color: var(--primarycolor);
+}
+
+.pd-pill-active {
+    background-color: var(--primarycolor);
+    color: var(--maincolorlight);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.pd-columns-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.pd-split-view {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.pd-split-image {
+    flex: 1.2;
+}
+
+.pd-split-image img {
+    width: 100%;
+    filter: drop-shadow(0 15px 30px rgba(0,0,0,0.1));
+}
+
+.pd-split-text {
+    flex: 1;
+}
+
+.pd-body-text {
+    font-family: var(--secondaryfontfamily);
+    color: var(--maincolorgreendark);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+    .pd-columns-wrapper, .pd-split-view {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+}

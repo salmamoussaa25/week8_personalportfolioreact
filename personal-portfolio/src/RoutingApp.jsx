@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-// import CategoryList from './pages/CategoryList';
+import CategoryList from './pages/UXProjectList';
 // import ProjectDetails from './pages/ProjectDetails';
 
 const RoutingApp = () => {
@@ -10,8 +10,9 @@ const RoutingApp = () => {
     <BrowserRouter>
         <Routes>
             <Route path='/' element={<Home />} />
-            {/* <Route path='/category-list' element={<CategoryList />} />
-            <Route path='/project-details' element={<ProjectDetails />} />    */}
+            <Route path='/ux-project-list' element={<CategoryList />} />
+            
+            {/* <Route path='/project-details' element={<ProjectDetails />} />    */}
         </Routes>
     </BrowserRouter> );
 }
