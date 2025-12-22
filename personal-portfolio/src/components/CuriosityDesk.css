@@ -1,0 +1,185 @@
+.curiosity-desk-root {
+    background-color: var(--maincolorlight);
+    padding: 120px 5%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.desk-header-wrap {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.desk-display-title {
+    font-family: var(--primarytitlefontfamily);
+    font-size: var(--primaryfontsize);
+    color: var(--maincolorgreendark);
+    margin-bottom: 12px;
+}
+
+.desk-instruction {
+    font-family: var(--secondaryfontfamily);
+    font-size: 18px;
+    color: var(--maincolorgreendark);
+    opacity: 0.6;
+}
+
+/* Desk Mat Styling */
+.desk-mat {
+    width: 100%;
+    max-width: 1100px;
+    background: white;
+    padding: 80px 40px;
+    border-radius: 50px;
+    box-shadow: 0 40px 80px rgba(2, 60, 64, 0.04);
+    border: 1px solid rgba(187, 160, 202, 0.2);
+}
+
+.desk-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 30px;
+    position: relative;
+}
+
+/* Item Trigger Styling */
+.desk-item-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.item-visual-trigger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 25px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.item-visual-trigger:hover {
+    transform: translateY(-10px);
+    background-color: var(--maincolorlight);
+}
+
+.svg-icon-holder {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    color: var(--accent-hit);
+    transition: transform 0.3s ease;
+}
+
+.svg-icon-holder svg {
+    width: 100%;
+    height: 100%;
+}
+
+.item-visual-trigger:hover .svg-icon-holder {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.item-label-tag {
+    font-family: var(--secondaryfontfamily);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--maincolorgreendark);
+    opacity: 0.8;
+}
+
+/* Info Reveal Card Styling */
+.info-reveal-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 300px;
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 30px 60px rgba(2, 60, 64, 0.15);
+    border: 2px solid var(--accentcolorpurple);
+    z-index: 50;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    text-align: center;
+}
+
+.desk-item-container.state-open .info-reveal-card {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.info-reveal-heading {
+    font-family: var(--primarytitlefontfamily);
+    font-size: 26px;
+    color: var(--primarycolor);
+    margin-bottom: 15px;
+}
+
+.info-reveal-text {
+    font-family: var(--secondaryfontfamily);
+    font-size: 16px;
+    color: var(--maincolorgreendark);
+    line-height: 1.6;
+}
+
+.info-reveal-close {
+    margin-top: 25px;
+    background: var(--maincolorgreendark);
+    border: none;
+    color: white;
+    font-family: var(--secondaryfontfamily);
+    padding: 8px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.3s ease;
+}
+
+.info-reveal-close:hover {
+    background: var(--primarycolor);
+}
+
+/* Floating Animations */
+@keyframes deskFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.desk-item-container:nth-child(odd) .item-visual-trigger {
+    animation: deskFloat 5s infinite ease-in-out;
+}
+
+.desk-item-container:nth-child(even) .item-visual-trigger {
+    animation: deskFloat 6s infinite ease-in-out 0.5s;
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+    .desk-grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .desk-grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .desk-mat {
+        padding: 40px 20px;
+    }
+    .info-reveal-card {
+        width: 85vw;
+    }
+}
