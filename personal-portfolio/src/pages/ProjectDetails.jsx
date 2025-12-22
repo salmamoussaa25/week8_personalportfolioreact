@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import Title from '../components/Title';
 import NewsletterCard from '../components/NewsletterCard';
 import FooterSection from '../components/FooterSection';
-import Subtitle from './Subtitle'; // New Component
+import Subtitle from './Subtitle'; 
 
 
 const ProjectDetails = () => {
@@ -13,7 +13,7 @@ const ProjectDetails = () => {
             <NavBar />
 
             <main className="pd-main-layout">
-                {/* Pill Breadcrumbs as requested */}
+
                 <nav className="pd-pill-breadcrumbs">
                     <span className="pd-pill-item">Home</span>
                     <span className="pd-pill-sep">/</span>
@@ -26,7 +26,6 @@ const ProjectDetails = () => {
 
                 <Title sectionTitle="REBRANDING GIZA ZOO: A FUTURISTIC DIGITAL WINDOW INTO GIZA ZOO" />
 
-                {/* Visual Collage Section */}
                 <section className="pd-visual-showcase">
                     <div className="pd-collage-grid">
                         <div className="pd-collage-left">
@@ -44,7 +43,6 @@ const ProjectDetails = () => {
                     </div>
                 </section>
 
-                {/* Subtitle-led Content Sections */}
                 <section className="pd-text-sections">
                     <Subtitle text="A Futuristic Digital Window" />
                     <div className="pd-columns-wrapper">
