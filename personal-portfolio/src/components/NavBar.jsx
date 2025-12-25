@@ -15,6 +15,7 @@ const NavBar = () => {
                     <MenuButton title="About" to="/about" />
                     <MenuButton title="Services" to="/services" />
                     <MenuButton title="Projects" to="/projects" />
+                    <MenuButton title="Blog" to="/blog" />
                     <MenuButton title="Contact" to="/contact" />
                 </div>
             

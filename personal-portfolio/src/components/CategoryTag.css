@@ -1,0 +1,8 @@
+.category-tag {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-family: var(--secondaryfontfamily);
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}

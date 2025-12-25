@@ -1,0 +1,127 @@
+.cont-category {
+    padding: 100px 8% 60px 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-bottom: 1px solid rgba(2, 60, 64, 0.08);
+}
+
+.category-title-main {
+    font-family: var(--primarytitlefontfamily);
+    font-size: var(--primaryfontsize);
+    color: var(--maincolorgreendark);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.category-description-text {
+    font-family: var(--secondaryfontfamily);
+    font-size: 18px;
+    max-width: 800px;
+    line-height: 1.6;
+    color: var(--maincolorgreendark);
+    margin-bottom: 25px;
+}
+
+.category-tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    background-color: var(--accentcolorpurple);
+    color: var(--maincolorgreendark);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-family: var(--secondaryfontfamily);
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.skill-tag:hover {
+    background-color: var(--primarycolor);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Scroll Container */
+.horizontal-scroll-container {
+    margin: 0 -8%;
+    padding: 0 8%;
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.scroll-track {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.project-thumb-card, .coming-soon-card {
+    min-width: 380px;
+    height: 240px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-thumb-card:hover {
+    transform: scale(1.02);
+}
+
+.coming-soon-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--secondaryfontfamily);
+    color: var(--accentcolorpurple);
+    border: 2px dashed var(--accentcolorpurple);
+    background: transparent;
+}
+
+/* Arrow Interaction */
+.category-arrow-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    min-width: 150px;
+}
+
+.arrow-icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid var(--primarycolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primarycolor);
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+.category-arrow-link:hover .arrow-icon-circle {
+    background-color: var(--primarycolor);
+    color: var(--maincolorlight);
+    transform: translateX(10px);
+}
+
+.arrow-label {
+    font-family: var(--secondaryfontfamily);
+    color: var(--primarycolor);
+    font-weight: 600;
+    font-size: 14px;
+}

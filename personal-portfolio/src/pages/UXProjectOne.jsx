@@ -1,10 +1,10 @@
 import React from 'react';
-import './ProjectDetails.css';
+import './UXProjectOne.css';
 import NavBar from '../components/NavBar';
 import Title from '../components/Title';
 import NewsletterCard from '../components/NewsletterCard';
 import FooterSection from '../components/FooterSection';
-import Subtitle from './Subtitle'; 
+import Subtitle from '../components/Subtitle'; 
 
 
 const ProjectDetails = () => {

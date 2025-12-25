@@ -1,0 +1,34 @@
+.cat-project-card {
+    min-width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cat-project-card:hover {
+    transform: scale(1.05);
+}
+
+.cat-thumbnail-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cat-thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cat-card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(2, 60, 64, 0.8));
+    color: white;
+    font-family: var(--secondaryfontfamily);
+}
