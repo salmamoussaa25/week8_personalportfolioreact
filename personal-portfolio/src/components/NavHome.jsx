@@ -8,12 +8,12 @@ const NavHome = () => {
     <>
     <nav>
         <section className='menubuttonscont'>
-            <MenuButton title="My Approach" />
-            <MenuButton title="Latest Projects" />
-            <MenuButton title="Skills" />
-            <MenuButton title="Experience" />
-            <MenuButton title="Blog" />
-            <MenuButton title="Services" />
+            <MenuButton title="Home" to="/" />
+            <MenuButton title="About" to="/about" />
+            <MenuButton title="Services" to="/services" />
+            <MenuButton title="Projects" to="/categories" />
+            <MenuButton title="Blog" to="/blog" />
+            <MenuButton title="Contact" to="/contact" />
         </section>
         <LanguageAr title="عربي"/>
     </nav>
