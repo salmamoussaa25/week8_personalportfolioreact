@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
-import NavBar from '../components/NavBar'
+import NavBar from '../components/NavBar';
 import AboutBio from '../components/AboutBio';
 import AboutInspo from '../components/AboutInspo';
 import FooterSection from '../components/FooterSection';

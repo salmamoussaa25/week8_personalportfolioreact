@@ -29,8 +29,8 @@ const AboutBio = () => {
   };
 
   const interests = [
-    { id: 1, Icon: Icons.Design, title: "Design", desc: "Obsessed with layout & flow" },
-    { id: 2, Icon: Icons.Coffee, title: "Coffee", desc: "Fuelled by Oat Lattes" },
+    { id: 1, Icon: Icons.Design, title: "Design", desc: "Obsessed with editorial layouts" },
+    { id: 2, Icon: Icons.Coffee, title: "Coffee", desc: "Fuelled by iced spanish lattes" },
     { id: 3, Icon: Icons.Learning, title: "Curiosity", desc: "Always in a new course" },
     { id: 4, Icon: Icons.Nature, title: "Nature", desc: "Finding peace in the green" }
   ];
@@ -43,14 +43,14 @@ const AboutBio = () => {
         <div className="bio-narrative">
           <h2 className="bio-section-heading">The Backstory</h2>
           <p className="bio-text-main">
-            I am currently pursuing my degree in <span className="text-highlight">Computer Science & Design</span>, 
+            I am currently pursuing my degree in <span className="text-highlight"> User Experience and Interface Design</span>, 
             where I blend logic with pure creativity. My background is rooted in 
             fine arts, which allows me to see code as just another canvas for storytelling.
           </p>
           
           <div className="study-focus-card">
             <h3 className="focus-label">Current Focus</h3>
-            <p className="focus-description">Specializing in Human-Computer Interaction and UI Architecture.</p>
+            <p className="focus-description">Specializing in HCI, IA, and Layout Design.</p>
           </div>
         </div>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import './HeroAbout.css';
+import salma_pfp from "../assets/salma_pfp.jpg"
 
 const HeroAbout = () => {
   return (
@@ -31,7 +32,7 @@ const HeroAbout = () => {
         <div className="visual-side">
           <div className="image-frame">
             <img 
-              src="https://via.placeholder.com/600x800" 
+              src={salma_pfp} 
               alt="Profile" 
               className="placeholder-img"
             />
