@@ -1,0 +1,98 @@
+/* Services.css */
+
+.services-section {
+    background-color: var(--maincolorlight);
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-title {
+    color: var(--primarycolor);
+    font-family: var(--primarytitlefontfamily);
+    font-size: var(--primaryfontsize);
+    font-weight: 900; /* Assuming bold based on image */
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  /* Grid Layout */
+  .services-grid {
+    display: grid;
+    width: 100%;
+    max-width: 1400px;
+    /* This creates the responsive columns automatically */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  /* Card Styling */
+  .service-card {
+    background-color: var(--accentcolorpurple);
+    border-radius: 20px;
+    padding: 2rem;
+    height: 400px; /* Fixed height to match the uniformity in image */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Pushes content to top and button to bottom */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Interactive Hover Effect */
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card h3 {
+    font-family: var(--seriffontfamily); /* Using the serif font from your vars */
+    font-size: var(--seriffontsize);
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: normal;
+  }
+  
+  /* The empty space in the middle (optional: good place for icons later) */
+  .card-content-spacer {
+    flex-grow: 1;
+  }
+  
+  /* Button Styling */
+  .details-btn {
+    background-color: var(--maincolorlight);
+    color: var(--accentcolorpurple); /* Text color matches card for harmony */
+    font-family: var(--secondaryfontfamily);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .details-btn:hover {
+    background-color: white;
+    color: var(--primarycolor);
+    transform: scale(1.05);
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 32px;
+    }
+    
+    .service-card {
+      height: 350px;
+    }
+  }

@@ -1,0 +1,142 @@
+/* FeaturedProjects.css */
+
+/* Ensure these variables are available globally in your project */
+:root {
+    --primarycolor: #E66249;
+    --maincolorgreendark: #023C40;
+    --maincolorlight: #FCF2D9;
+    --accentcolorpurple: #BBA0CA;
+    --primarytitlefontfamily: "BBH Sans Hegarty", sans-serif;
+    --primaryfontsize: 40px;
+    --secondaryfontfamily: "Lexend", sans-serif;
+    --secondaryfontsize: 30px;
+    --secondaryfontweight: 400;
+    --subheadingfontsize: 40px;
+    --subheadingfontweight: 500;
+    --minitextfontsize: 24px;
+    --minitextfontweight: 400;
+    --seriffontfamily: "Abril Fatface", serif;
+    --seriffontsize: 32px;
+    --arabicfontfamily: 'BlueOcean', sans-serif;
+    --arabicfontdirection: rtl;
+}
+
+.featured-projects-section {
+    background-color: var(--accentcolorpurple);
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-family: var(--primarytitlefontfamily);
+    font-size: var(--primaryfontsize);
+    color: var(--maincolorlight); /* Using cream color based on the image */
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 900; /* Assuming bold based on image appearance */
+}
+
+/* Grid Layout */
+.projects-grid {
+    display: grid;
+    /* Using a 12-column grid for flexible spanning */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 3rem;
+    align-items: start; /* Ensures items don't stretch unnaturally */
+}
+
+/* Individual Grid Items Positioning based on image layout */
+
+/* 1. Top Left: Dual Screens */
+.grid-item-1 {
+    grid-column: span 5;
+}
+
+/* 2. Top Right: Large Laptop (spans 2 rows height-wise visually) */
+.grid-item-2 {
+    grid-column: span 7;
+    grid-row: span 2;
+}
+
+/* 3. Middle Left: Single Screen */
+.grid-item-3 {
+    grid-column: span 5;
+    margin-top: -4rem; /* Pull up slightly to match the tight spacing in the design */
+}
+
+/* 4. Bottom Left: Laptop */
+.grid-item-4 {
+    grid-column: span 6;
+}
+
+/* 5. Bottom Right: Laptop */
+.grid-item-5 {
+    grid-column: span 6;
+}
+
+/* Image Styling within Grid Items */
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Optional: adds subtle depth and rounding to match mockups */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+    transform: scale(1.02);
+}
+
+/* Button Styling */
+.see-more-btn-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.see-more-btn {
+    background-color: var(--primarycolor);
+    color: var(--maincolorlight);
+    font-family: var(--secondaryfontfamily);
+    font-size: 18px; /* Slightly smaller than secondaryfontsize for button */
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 50px; /* Pill shape */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.see-more-btn:hover {
+    background-color: var(--maincolorgreendark); /* Darken on hover option */
+    transform: translateY(-2px);
+}
+
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .projects-grid {
+        /* Switch to a single column layout on smaller screens */
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Reset all spans for single column view */
+    .grid-item-1, .grid-item-2, .grid-item-3, .grid-item-4, .grid-item-5 {
+        grid-column: span 1;
+        grid-row: span 1;
+        margin-top: 0;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+}

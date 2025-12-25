@@ -28,6 +28,7 @@ const About = () => {
             <DigitalGarden />
             <NewsletterCard />
             <FooterSection />
+
         </section>
         
     </> );
